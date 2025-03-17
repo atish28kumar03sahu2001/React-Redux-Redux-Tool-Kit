@@ -80,3 +80,24 @@ specify how the app's state changes in response to actions sent to the store. Fu
 
 One store the entire application. The responsibilty of Redux Stores are
 Holds application state. Allows access to state via getState(). Allows state to be updated via dispatch(action). Registers listeners via subscribe(listener). Handles unregistering of listeners via the function returned by subscribe(listener).
+
+## Middleware
+
+Middleware is the suggested way to extend Redux with custom functionality. It provides a third-party extension point between dispatching an action, and the moment it reaches the reducer.
+Middleware use for logging, crash reporting, performing asynchronous tasks etc.
+
+## More On Actions
+
+### Synchronous Actions
+
+In Synchronous Actions As soon as an action was dispatched, the state was immediately updated. if you dispatch the `BUY_CAKE` action, the numOfCakes was right away decremented by 1. Same with `BUY_ICECREAM` action as well.
+
+### Asynchronous Actions
+
+In Asynchronous API calls to fetch data from and end point and use that data in your application.
+
+### Asynchronous Action Creators
+
+AXIOS: request to an API end point
+
+redux-thunk: Define async action creators
