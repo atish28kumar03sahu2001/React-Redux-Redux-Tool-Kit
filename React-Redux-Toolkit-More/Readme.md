@@ -59,3 +59,15 @@ One store for the entire application responsibilities
 ## Middleware
 
 Middleware is the suggested way to extend Redux with custom functionality. It provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. Use Middleware fro logging, crash reporting, performing, asynchronous tasks etc.
+
+## Async Actions
+
+### Synchronous Actions
+As soon as action was dispatched, the state was immediately updated. if you dispatch the CAKE_ORDERED action, the numOfCakes was right away decremented by 1. Same with ICECREAM_ORDERED action as well.
+
+### Async Actions
+Asynchronous API Calls to fetch data from an end point and use that data in your application.
+
+## Async Action Creators
+axios: Requests to an API end point
+redux-thunk: define async action creators, MIddleware
