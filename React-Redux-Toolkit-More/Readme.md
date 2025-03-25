@@ -56,3 +56,6 @@ One store for the entire application responsibilities
 4. Registers listeners via `subscribe(listener)`
 5. Handles Unregistering of listeners via the function returned by `subscribe(listener)`
 
+## Middleware
+
+Middleware is the suggested way to extend Redux with custom functionality. It provides a third-party extension point between dispatching an action, and the moment it reaches the reducer. Use Middleware fro logging, crash reporting, performing, asynchronous tasks etc.
