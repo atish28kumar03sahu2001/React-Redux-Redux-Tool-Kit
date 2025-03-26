@@ -71,3 +71,20 @@ Asynchronous API Calls to fetch data from an end point and use that data in your
 ## Async Action Creators
 axios: Requests to an API end point
 redux-thunk: define async action creators, MIddleware
+
+## Redux Concerns
+1. Redux requires too much boilerplate code
+    * Action
+    * Action Object
+    * Action Creator
+    * Switch Statement in a reducer
+2. A lot of other packages have to be installed to work with redux
+    * Redux-Thunk
+    * immer
+    * Redux-devtools
+
+## Redux Toolkit
+Redux Toolkit is the official opinionated, batteries-included toolset for efficient Redux development.
+* Abstract over the setup process
+* Handle the most common use case
+* include some useful utilities
